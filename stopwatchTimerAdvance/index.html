@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Timer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="timer-container">
+    <div id="custom-timer">
+        <input type="number" id="custom-minutes" placeholder="Enter minutes" min="1" />
+        <input type="text" id="timer-name" placeholder="Enter timer name (optional)" />
+        <button onclick="addCustomTimer()">Set Custom Timer</button>
+    </div>
+    <div id="predefined-timers">
+        <button class="timer-btn" onclick="addCustomTimer(50, '50 Mins')">50 Mins</button>
+        <!-- Add buttons for other predefined times if needed -->
+    </div>
+    <div id="timers-list"></div>
+    <div id="controls">
+        <button onclick="deleteTimersInfo()">Delete Timers Info</button>
+    </div>
+</div>
+<audio id="timer-sound" src="score.ogg"></audio> <!-- Path to your sound file -->
+<script src="script.js"></script>
+</body>
+</html>
